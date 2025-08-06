@@ -1,0 +1,3197 @@
+{
+  "config": {
+    "configFile": "/home/khalil/pkmn_card_detection/frontend/playwright.config.js",
+    "rootDir": "/home/khalil/pkmn_card_detection/frontend/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 12
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/khalil/pkmn_card_detection/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 12
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/khalil/pkmn_card_detection/frontend/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/khalil/pkmn_card_detection/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 12
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/khalil/pkmn_card_detection/frontend/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/khalil/pkmn_card_detection/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 12
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/khalil/pkmn_card_detection/frontend/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 12,
+    "webServer": {
+      "command": "npm start",
+      "port": 3000,
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "camera.test.js",
+      "file": "camera.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Camera Controls",
+          "file": "camera.test.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should have camera control buttons",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1236,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.398Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-66598f4951cd46c0e0eb",
+              "file": "camera.test.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should request camera access on start",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 6215,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('#startBtn')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#startBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button id=\"startBtn\" class=\"btn btn-primary\">Start Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('#startBtn')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#startBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button id=\"startBtn\" class=\"btn btn-primary\">Start Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:48:28",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 28,
+                          "line": 48
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 46 |\u001b[39m     \n \u001b[90m 47 |\u001b[39m     \u001b[90m// Check button states after starting\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m expect(startBtn)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#captureBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 28,
+                            "line": 48
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeDisabled\u001b[2m()\u001b[22m\n\nLocator: locator('#startBtn')\nExpected: disabled\nReceived: enabled\nCall log:\n\u001b[2m  - Expect \"toBeDisabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#startBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button id=\"startBtn\" class=\"btn btn-primary\">Start Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"enabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 46 |\u001b[39m     \n \u001b[90m 47 |\u001b[39m     \u001b[90m// Check button states after starting\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m expect(startBtn)\u001b[33m.\u001b[39mtoBeDisabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#captureBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m     \u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:48:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.105Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-request-camera-access-on-start-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-request-camera-access-on-start-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-request-camera-access-on-start-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 28,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-a94df679b02345cf80f4",
+              "file": "camera.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should handle camera permission denial",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1281,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.353Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-a56e7a5d9abedafc1283",
+              "file": "camera.test.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "should stop camera stream",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 6202,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('#stopBtn')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#stopBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled id=\"stopBtn\" class=\"btn btn-secondary\">Stop Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('#stopBtn')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#stopBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled id=\"stopBtn\" class=\"btn btn-secondary\">Stop Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:96:44",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 44,
+                          "line": 96
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 94 |\u001b[39m     \u001b[90m// Start camera\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#startBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m     \n \u001b[90m 98 |\u001b[39m     \u001b[90m// Stop camera\u001b[39m\n \u001b[90m 99 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 44,
+                            "line": 96
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m()\u001b[22m\n\nLocator: locator('#stopBtn')\nExpected: enabled\nReceived: disabled\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#stopBtn')\u001b[22m\n\u001b[2m    9 × locator resolved to <button disabled id=\"stopBtn\" class=\"btn btn-secondary\">Stop Camera</button>\u001b[22m\n\u001b[2m      - unexpected value \"disabled\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 94 |\u001b[39m     \u001b[90m// Start camera\u001b[39m\n \u001b[90m 95 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#startBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m))\u001b[33m.\u001b[39mtoBeEnabled()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m     \n \u001b[90m 98 |\u001b[39m     \u001b[90m// Stop camera\u001b[39m\n \u001b[90m 99 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#stopBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:96:44\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.188Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-stop-camera-stream-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-stop-camera-stream-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-stop-camera-stream-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 44,
+                        "line": 96
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-734e77e126a81d2ceb7b",
+              "file": "camera.test.js",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "should capture frame from video",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "interrupted",
+                      "duration": 19236,
+                      "error": {
+                        "message": "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('#captureBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"captureBtn\" class=\"btn btn-action\">Capture Frame</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    32 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                        "stack": "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('#captureBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"captureBtn\" class=\"btn btn-action\">Capture Frame</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    32 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:135:39",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 39,
+                          "line": 135
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 133 |\u001b[39m     \n \u001b[90m 134 |\u001b[39m     \u001b[90m// Capture frame\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#captureBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m     \n \u001b[90m 137 |\u001b[39m     \u001b[90m// Check message log\u001b[39m\n \u001b[90m 138 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 39,
+                            "line": 135
+                          },
+                          "message": "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('#captureBtn')\u001b[22m\n\u001b[2m    - locator resolved to <button disabled id=\"captureBtn\" class=\"btn btn-action\">Capture Frame</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    32 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 133 |\u001b[39m     \n \u001b[90m 134 |\u001b[39m     \u001b[90m// Capture frame\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 135 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#captureBtn'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 136 |\u001b[39m     \n \u001b[90m 137 |\u001b[39m     \u001b[90m// Check message log\u001b[39m\n \u001b[90m 138 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:135:39\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.142Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-capture-frame-from-video-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-capture-frame-from-video-chromium/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 39,
+                        "line": 135
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-a38b5f10856c5214ad0d",
+              "file": "camera.test.js",
+              "line": 111,
+              "column": 3
+            },
+            {
+              "title": "should have camera control buttons",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 10,
+                      "status": "failed",
+                      "duration": 1544,
+                      "error": {
+                        "message": "Error: browserContext.grantPermissions: Unknown permission: camera",
+                        "stack": "Error: browserContext.grantPermissions: Unknown permission: camera\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 19,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 19,
+                            "line": 10
+                          },
+                          "message": "Error: browserContext.grantPermissions: Unknown permission: camera\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.358Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-have-camera-control-buttons-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-have-camera-control-buttons-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 19,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-19b7553c57d687bdaf32",
+              "file": "camera.test.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should request camera access on start",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 9,
+                      "status": "failed",
+                      "duration": 1595,
+                      "error": {
+                        "message": "Error: browserContext.grantPermissions: Unknown permission: camera",
+                        "stack": "Error: browserContext.grantPermissions: Unknown permission: camera\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 19,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 19,
+                            "line": 10
+                          },
+                          "message": "Error: browserContext.grantPermissions: Unknown permission: camera\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.437Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-request-camera-access-on-start-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-request-camera-access-on-start-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 19,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-318b9203d03e1994b6a5",
+              "file": "camera.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should handle camera permission denial",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1721,
+                      "error": {
+                        "message": "Error: browserContext.grantPermissions: Unknown permission: camera",
+                        "stack": "Error: browserContext.grantPermissions: Unknown permission: camera\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 19,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 19,
+                            "line": 10
+                          },
+                          "message": "Error: browserContext.grantPermissions: Unknown permission: camera\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.389Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-sho-3be20-le-camera-permission-denial-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-sho-3be20-le-camera-permission-denial-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 19,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-f215a7dbbc681da1205c",
+              "file": "camera.test.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "should stop camera stream",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 11,
+                      "status": "failed",
+                      "duration": 1981,
+                      "error": {
+                        "message": "Error: browserContext.grantPermissions: Unknown permission: camera",
+                        "stack": "Error: browserContext.grantPermissions: Unknown permission: camera\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 19,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 19,
+                            "line": 10
+                          },
+                          "message": "Error: browserContext.grantPermissions: Unknown permission: camera\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.469Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-stop-camera-stream-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-stop-camera-stream-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 19,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-27ba439f6ca4c7ed3178",
+              "file": "camera.test.js",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "should capture frame from video",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 1200,
+                      "error": {
+                        "message": "Error: browserContext.grantPermissions: Unknown permission: camera",
+                        "stack": "Error: browserContext.grantPermissions: Unknown permission: camera\n    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                          "column": 19,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                            "column": 19,
+                            "line": 10
+                          },
+                          "message": "Error: browserContext.grantPermissions: Unknown permission: camera\n\n\u001b[0m \u001b[90m  8 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m context }) \u001b[33m=>\u001b[39m {\n \u001b[90m  9 |\u001b[39m     \u001b[90m// Grant camera permissions\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mgrantPermissions([\u001b[32m'camera'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/camera.test.js:10:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.550Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-capture-frame-from-video-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/camera-Camera-Controls-should-capture-frame-from-video-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/camera.test.js",
+                        "column": 19,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-7c13abdfef7459048aa3",
+              "file": "camera.test.js",
+              "line": 111,
+              "column": 3
+            },
+            {
+              "title": "should have camera control buttons",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 3,
+                      "status": "interrupted",
+                      "duration": 732,
+                      "error": {
+                        "message": "Error: browserContext.newPage: Test ended.",
+                        "stack": "Error: browserContext.newPage: Test ended."
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserContext.newPage: Test ended."
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:57.576Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-9faebeb04d94c451651c",
+              "file": "camera.test.js",
+              "line": 14,
+              "column": 3
+            },
+            {
+              "title": "should request camera access on start",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 1,
+                      "status": "interrupted",
+                      "duration": 740,
+                      "error": {
+                        "message": "Error: browserContext.newPage: Test ended.",
+                        "stack": "Error: browserContext.newPage: Test ended."
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserContext.newPage: Test ended."
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:57.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-a987654df7348c3e0b11",
+              "file": "camera.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should handle camera permission denial",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-2d3e1da212b3874fd228",
+              "file": "camera.test.js",
+              "line": 57,
+              "column": 3
+            },
+            {
+              "title": "should stop camera stream",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 6,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:59.083Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-0044f756f950e89384f8",
+              "file": "camera.test.js",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "should capture frame from video",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-e5502e9b7cefe1f5d9f9",
+              "file": "camera.test.js",
+              "line": 111,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Video Element",
+          "file": "camera.test.js",
+          "line": 143,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should have video element with correct attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.246Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-b1c99e58537f494f4736",
+              "file": "camera.test.js",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "should have overlay canvas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1251,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.190Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-ff4b5ddac70abf7a3711",
+              "file": "camera.test.js",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should have video element with correct attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1683,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.785Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-0b3ceb46c952f73be368",
+              "file": "camera.test.js",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "should have overlay canvas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1362,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:43.896Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-609f0c3b411539dd9239",
+              "file": "camera.test.js",
+              "line": 155,
+              "column": 3
+            },
+            {
+              "title": "should have video element with correct attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-a2409d123a06e332e5f2",
+              "file": "camera.test.js",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "should have overlay canvas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "dbe486f3aa523ef5e7c2-53217094a91a55dc901c",
+              "file": "camera.test.js",
+              "line": 155,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "server.test.js",
+      "file": "server.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Server Health Check",
+          "file": "server.test.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return healthy status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 61,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.070Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-a24c700c96c17c86e188",
+              "file": "server.test.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should return healthy status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 48,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:46.478Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-fdeea13e34326320010e",
+              "file": "server.test.js",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "should return healthy status",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-22336823e8e38f52d36d",
+              "file": "server.test.js",
+              "line": 8,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Static File Serving",
+          "file": "server.test.js",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should serve index.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1299,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.240Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-d007aa42110cef46d67d",
+              "file": "server.test.js",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should load CSS styles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 1259,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.162Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-0f3a053f2d63eaf7e416",
+              "file": "server.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should load JavaScript",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 10,
+                      "status": "passed",
+                      "duration": 2010,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.283Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-c7e8cf1d10636f60610c",
+              "file": "server.test.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "should serve index.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1708,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:46.626Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-83977dfc6699109ce41c",
+              "file": "server.test.js",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should load CSS styles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1439,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:47.001Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-31366f6a940c7bfa3b02",
+              "file": "server.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should load JavaScript",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2468,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:46.534Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-0449cb544d343500a039",
+              "file": "server.test.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "should serve index.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-b755c29aa6711191a33e",
+              "file": "server.test.js",
+              "line": 19,
+              "column": 3
+            },
+            {
+              "title": "should load CSS styles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-88bc6881128d5d871793",
+              "file": "server.test.js",
+              "line": 29,
+              "column": 3
+            },
+            {
+              "title": "should load JavaScript",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-40ebc73e5aaca2de6ebd",
+              "file": "server.test.js",
+              "line": 43,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "WebSocket Connection",
+          "file": "server.test.js",
+          "line": 59,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should establish WebSocket connection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 11,
+                      "status": "passed",
+                      "duration": 2901,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.428Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-4e0eca459826ff3b8ce7",
+              "file": "server.test.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "should handle WebSocket messages",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 3735,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:40.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-de28ed35895318caf264",
+              "file": "server.test.js",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "should establish WebSocket connection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 3708,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:47.890Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-8cdbf22403972052f706",
+              "file": "server.test.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "should handle WebSocket messages",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 10,
+                      "status": "interrupted",
+                      "duration": 3163,
+                      "error": {
+                        "message": "Error: page.waitForTimeout: Test ended.",
+                        "stack": "Error: page.waitForTimeout: Test ended.\n    at /home/khalil/pkmn_card_detection/frontend/tests/server.test.js:86:16",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/server.test.js",
+                          "column": 16,
+                          "line": 86
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     \n \u001b[90m 88 |\u001b[39m     \u001b[90m// Check message log for connection messages\u001b[39m\n \u001b[90m 89 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/server.test.js",
+                            "column": 16,
+                            "line": 86
+                          },
+                          "message": "Error: page.waitForTimeout: Test ended.\n\n\u001b[0m \u001b[90m 84 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m3000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     \n \u001b[90m 88 |\u001b[39m     \u001b[90m// Check message log for connection messages\u001b[39m\n \u001b[90m 89 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/server.test.js:86:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:48.525Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/server-WebSocket-Connection-should-handle-WebSocket-messages-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/server-WebSocket-Connection-should-handle-WebSocket-messages-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/server.test.js",
+                        "column": 16,
+                        "line": 86
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-77de9c8fa7126f427512",
+              "file": "server.test.js",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "should establish WebSocket connection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-0732c2009da7f019360d",
+              "file": "server.test.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "should handle WebSocket messages",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "bed9a802ab76d454556e-434c7686d5bebaeb5545",
+              "file": "server.test.js",
+              "line": 75,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui.test.js",
+      "file": "ui.test.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page Layout",
+          "file": "ui.test.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display header with title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.962Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-fb6eceefe77d275dba3f",
+              "file": "ui.test.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "should display camera section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 656,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.944Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-918f4ae8ef330d05a4b8",
+              "file": "ui.test.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should display status section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 678,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.962Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-8be4d57e5efbdf20b1c9",
+              "file": "ui.test.js",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "should display collection section",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 5453,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:58:28",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 28,
+                          "line": 58
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     \n \u001b[90m 57 |\u001b[39m     \u001b[36mconst\u001b[39m cardGrid \u001b[33m=\u001b[39m collectionSection\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardGrid)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m   test(\u001b[32m'should display footer'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 28,
+                            "line": 58
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     \n \u001b[90m 57 |\u001b[39m     \u001b[36mconst\u001b[39m cardGrid \u001b[33m=\u001b[39m collectionSection\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardGrid)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m   test(\u001b[32m'should display footer'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:58:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.969Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 28,
+                        "line": 58
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-e102f58b318f7b61eaa1",
+              "file": "ui.test.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "should display footer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 620,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-6ca01548f325217c9610",
+              "file": "ui.test.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should display header with title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 598,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:50.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-50ce964d3f24827319e1",
+              "file": "ui.test.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "should display camera section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 580,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:50.623Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-da57dd4c73a54e2a2d34",
+              "file": "ui.test.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should display status section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 751,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:51.221Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-22eece77417b87fe0421",
+              "file": "ui.test.js",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "should display collection section",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 5933,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:58:28",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 28,
+                          "line": 58
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     \n \u001b[90m 57 |\u001b[39m     \u001b[36mconst\u001b[39m cardGrid \u001b[33m=\u001b[39m collectionSection\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardGrid)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m   test(\u001b[32m'should display footer'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 28,
+                            "line": 58
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('.collection-section').locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.collection-section').locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     \n \u001b[90m 57 |\u001b[39m     \u001b[36mconst\u001b[39m cardGrid \u001b[33m=\u001b[39m collectionSection\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardGrid)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 59 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m\n \u001b[90m 61 |\u001b[39m   test(\u001b[32m'should display footer'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:58:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:51.619Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Page-Layout-should-display-collection-section-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 28,
+                        "line": 58
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-2cfc8239de45d0d9061e",
+              "file": "ui.test.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "should display footer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 2,
+                      "status": "interrupted",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:52.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-2e4eaad39d8aa0f185fe",
+              "file": "ui.test.js",
+              "line": 61,
+              "column": 3
+            },
+            {
+              "title": "should display header with title",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-1d4420beaf0894e3e561",
+              "file": "ui.test.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "should display camera section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-045ae502f8b76f0c17d2",
+              "file": "ui.test.js",
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should display status section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-bb8b6b579275d5eb46d8",
+              "file": "ui.test.js",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "should display collection section",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-4a0610c32e5a693eb970",
+              "file": "ui.test.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "should display footer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-c0c34f8a9e14826e34e4",
+              "file": "ui.test.js",
+              "line": 61,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Responsive Design",
+          "file": "ui.test.js",
+          "line": 68,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should be responsive on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.999Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-50a1c628d5e01184c23a",
+              "file": "ui.test.js",
+              "line": 69,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 623,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.490Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-ea381b268e6bd8e7c7a8",
+              "file": "ui.test.js",
+              "line": 88,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-a0190db4f179a003774a",
+              "file": "ui.test.js",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:51.981Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-3e0ca6dc339882a7c2c0",
+              "file": "ui.test.js",
+              "line": 69,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 2226,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:53.048Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-18db189faaff02a97643",
+              "file": "ui.test.js",
+              "line": 88,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:52.966Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-ade084afb84444a9f784",
+              "file": "ui.test.js",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on mobile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-68f5a2e5cba2610a6e8b",
+              "file": "ui.test.js",
+              "line": 69,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-02ad0f15ead9073fbe43",
+              "file": "ui.test.js",
+              "line": 88,
+              "column": 3
+            },
+            {
+              "title": "should be responsive on desktop",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-a63d9299921949fd9d17",
+              "file": "ui.test.js",
+              "line": 105,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Status Indicator",
+          "file": "ui.test.js",
+          "line": 117,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should show disconnected status initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 596,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.584Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-58768b5cd96ddf4f8d95",
+              "file": "ui.test.js",
+              "line": 118,
+              "column": 3
+            },
+            {
+              "title": "should have pulsing animation on status dot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 810,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.608Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-a8cd8fc18843e1242e02",
+              "file": "ui.test.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "should show disconnected status initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 430,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:52.590Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-c190678775bf1fb42481",
+              "file": "ui.test.js",
+              "line": 118,
+              "column": 3
+            },
+            {
+              "title": "should have pulsing animation on status dot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 11,
+                      "status": "interrupted",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:53.260Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-d8c27b92fa04f9d90d74",
+              "file": "ui.test.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "should show disconnected status initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-57dac53d34b5e7235515",
+              "file": "ui.test.js",
+              "line": 118,
+              "column": 3
+            },
+            {
+              "title": "should have pulsing animation on status dot",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-99041a0a81d235cbcd75",
+              "file": "ui.test.js",
+              "line": 134,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Message Log",
+          "file": "ui.test.js",
+          "line": 147,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1613,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.610Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-a7cd52b5282a5b482673",
+              "file": "ui.test.js",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "should add new log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 10,
+                      "status": "passed",
+                      "duration": 657,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:41.661Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-c2f3b4eb29e519193120",
+              "file": "ui.test.js",
+              "line": 162,
+              "column": 3
+            },
+            {
+              "title": "should display log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 7,
+                      "status": "interrupted",
+                      "duration": 5731,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:149:16",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 16,
+                          "line": 149
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 147 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Message Log'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 148 |\u001b[39m   test(\u001b[32m'should display log entries'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m     \n \u001b[90m 152 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 16,
+                            "line": 149
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 147 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Message Log'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 148 |\u001b[39m   test(\u001b[32m'should display log entries'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 150 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m1000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 151 |\u001b[39m     \n \u001b[90m 152 |\u001b[39m     \u001b[36mconst\u001b[39m messageLog \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#messageLog'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:149:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:53.024Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Message-Log-should-display-log-entries-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Message-Log-should-display-log-entries-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 16,
+                        "line": 149
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-cb5caa251898f2806949",
+              "file": "ui.test.js",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "should add new log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 8,
+                      "status": "interrupted",
+                      "duration": 10041,
+                      "error": {
+                        "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:163:16",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 16,
+                          "line": 163
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 161 |\u001b[39m\n \u001b[90m 162 |\u001b[39m   test(\u001b[32m'should add new log entries'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 163 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 164 |\u001b[39m     \n \u001b[90m 165 |\u001b[39m     \u001b[90m// Trigger an action that logs\u001b[39m\n \u001b[90m 166 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 16,
+                            "line": 163
+                          },
+                          "message": "Error: page.goto: Test ended.\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3000/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 161 |\u001b[39m\n \u001b[90m 162 |\u001b[39m   test(\u001b[32m'should add new log entries'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 163 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 164 |\u001b[39m     \n \u001b[90m 165 |\u001b[39m     \u001b[90m// Trigger an action that logs\u001b[39m\n \u001b[90m 166 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:163:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:53.594Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Message-Log-should-add-new-log-entries-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 16,
+                        "line": 163
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-c1eb4f0061b5eb0aeac7",
+              "file": "ui.test.js",
+              "line": 162,
+              "column": 3
+            },
+            {
+              "title": "should display log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-7898cf08c97334a8bd91",
+              "file": "ui.test.js",
+              "line": 148,
+              "column": 3
+            },
+            {
+              "title": "should add new log entries",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-92a353994d62e5390a60",
+              "file": "ui.test.js",
+              "line": 162,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Card Collection Display",
+          "file": "ui.test.js",
+          "line": 180,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should have empty collection initially",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "failed",
+                      "duration": 5344,
+                      "error": {
+                        "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:185:34",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 34,
+                          "line": 185
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 183 |\u001b[39m     \n \u001b[90m 184 |\u001b[39m     \u001b[36mconst\u001b[39m cardCollection \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 185 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardCollection)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 186 |\u001b[39m     \n \u001b[90m 187 |\u001b[39m     \u001b[36mconst\u001b[39m cards \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cardCollection\u001b[33m.\u001b[39mlocator(\u001b[32m'.card-item'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 188 |\u001b[39m     expect(cards)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 34,
+                            "line": 185
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 183 |\u001b[39m     \n \u001b[90m 184 |\u001b[39m     \u001b[36mconst\u001b[39m cardCollection \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 185 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardCollection)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 186 |\u001b[39m     \n \u001b[90m 187 |\u001b[39m     \u001b[36mconst\u001b[39m cards \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cardCollection\u001b[33m.\u001b[39mlocator(\u001b[32m'.card-item'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 188 |\u001b[39m     expect(cards)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:185:34\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:42.127Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Card-Collection-Display-716d1--empty-collection-initially-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Card-Collection-Display-716d1--empty-collection-initially-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Card-Collection-Display-716d1--empty-collection-initially-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 34,
+                        "line": 185
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-42ad60d89e1c851983ad",
+              "file": "ui.test.js",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "should display card when added to collection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 452,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:42.189Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-e28d9cba8c72b7fc8e11",
+              "file": "ui.test.js",
+              "line": 191,
+              "column": 3
+            },
+            {
+              "title": "should have empty collection initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 5,
+                      "status": "interrupted",
+                      "duration": 4138,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    7 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    7 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:185:34",
+                        "location": {
+                          "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                          "column": 34,
+                          "line": 185
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 183 |\u001b[39m     \n \u001b[90m 184 |\u001b[39m     \u001b[36mconst\u001b[39m cardCollection \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 185 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardCollection)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 186 |\u001b[39m     \n \u001b[90m 187 |\u001b[39m     \u001b[36mconst\u001b[39m cards \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cardCollection\u001b[33m.\u001b[39mlocator(\u001b[32m'.card-item'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 188 |\u001b[39m     expect(cards)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                            "column": 34,
+                            "line": 185
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('#cardCollection')\nExpected: visible\nReceived: hidden\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#cardCollection')\u001b[22m\n\u001b[2m    7 × locator resolved to <div class=\"card-grid\" id=\"cardCollection\"></div>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 183 |\u001b[39m     \n \u001b[90m 184 |\u001b[39m     \u001b[36mconst\u001b[39m cardCollection \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#cardCollection'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 185 |\u001b[39m     \u001b[36mawait\u001b[39m expect(cardCollection)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 186 |\u001b[39m     \n \u001b[90m 187 |\u001b[39m     \u001b[36mconst\u001b[39m cards \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m cardCollection\u001b[33m.\u001b[39mlocator(\u001b[32m'.card-item'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 188 |\u001b[39m     expect(cards)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/khalil/pkmn_card_detection/frontend/tests/ui.test.js:185:34\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:54.666Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Card-Collection-Display-716d1--empty-collection-initially-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/khalil/pkmn_card_detection/frontend/test-results/ui-Card-Collection-Display-716d1--empty-collection-initially-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/khalil/pkmn_card_detection/frontend/tests/ui.test.js",
+                        "column": 34,
+                        "line": 185
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-d0d5496f742e04a44266",
+              "file": "ui.test.js",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "should display card when added to collection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1115,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-06T17:15:54.947Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "53aa42be48d82f034778-e627de70cd144864fd40",
+              "file": "ui.test.js",
+              "line": 191,
+              "column": 3
+            },
+            {
+              "title": "should have empty collection initially",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-bcd790bbf6aa0a58f155",
+              "file": "ui.test.js",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "should display card when added to collection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "53aa42be48d82f034778-b2fbd0b4b07319e68a96",
+              "file": "ui.test.js",
+              "line": 191,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-06T17:15:38.901Z",
+    "duration": 26380.584,
+    "expected": 36,
+    "skipped": 35,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

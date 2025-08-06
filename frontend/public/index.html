@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokemon Card Detection</h1>
+            <p class="subtitle">Real-time card recognition using your webcam</p>
+        </header>
+
+        <main>
+            <div class="camera-section">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="overlay"></canvas>
+                <div class="controls">
+                    <button id="startBtn" class="btn btn-primary">Start Camera</button>
+                    <button id="stopBtn" class="btn btn-secondary" disabled>Stop Camera</button>
+                    <button id="captureBtn" class="btn btn-action" disabled>Capture Frame</button>
+                </div>
+            </div>
+
+            <div class="status-section">
+                <div class="status-indicator">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span id="statusText">Disconnected</span>
+                </div>
+                <div id="messageLog" class="message-log"></div>
+            </div>
+
+            <div class="collection-section">
+                <h2>Detected Cards</h2>
+                <div id="cardCollection" class="card-grid"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Pokemon Card Detection &copy; 2024</p>
+        </footer>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

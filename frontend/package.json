@@ -1,0 +1,46 @@
+{
+  "name": "pkmn-card-detection-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Pokemon Card Detection application with real-time webcam recognition",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:coverage": "nyc --reporter=html --reporter=text playwright test",
+    "lint": "eslint src/ tests/ --ext .js,.mjs",
+    "lint:fix": "eslint src/ tests/ --ext .js,.mjs --fix",
+    "format": "prettier --write 'src/**/*.{js,mjs,html,css}' 'tests/**/*.{js,mjs}'"
+  },
+  "keywords": [
+    "pokemon",
+    "tcg",
+    "webcam",
+    "card-detection"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.1.0",
+    "nyc": "^15.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

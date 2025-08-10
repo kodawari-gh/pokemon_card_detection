@@ -14,13 +14,56 @@
         </header>
 
         <main>
-            <div class="camera-section">
-                <video id="webcam" autoplay playsinline></video>
-                <canvas id="overlay"></canvas>
-                <div class="controls">
-                    <button id="startBtn" class="btn btn-primary">Start Camera</button>
-                    <button id="stopBtn" class="btn btn-secondary" disabled>Stop Camera</button>
-                    <button id="captureBtn" class="btn btn-action" disabled>Capture Frame</button>
+            <div class="main-content">
+                <div class="camera-section">
+                    <div class="camera-container">
+                        <video id="webcam" autoplay muted playsinline></video>
+                        <canvas id="overlay"></canvas>
+                    </div>
+                    <div class="camera-controls">
+                        <button id="startBtn" class="btn btn-primary">Start Camera</button>
+                        <div class="processing-speed-controls">
+                            <label for="processingSpeed" class="speed-label">Processing Speed:</label>
+                            <div class="speed-slider-container">
+                                <input type="range" id="processingSpeed" min="1" max="30" value="5" class="speed-slider">
+                                <span id="speedValue" class="speed-value">5 FPS</span>
+                            </div>
+                        </div>
+                        <div class="detection-parameters">
+                            <h4>Detection Parameters</h4>
+                            <div class="parameter-group">
+                                <label for="confThreshold" class="parameter-label">Confidence Threshold:</label>
+                                <div class="parameter-slider-container">
+                                    <input type="range" id="confThreshold" min="0.1" max="0.9" step="0.05" value="0.25" class="parameter-slider">
+                                    <span id="confValue" class="parameter-value">0.25</span>
+                                </div>
+                            </div>
+                            <div class="parameter-group">
+                                <label for="iouThreshold" class="parameter-label">IoU Threshold:</label>
+                                <div class="parameter-slider-container">
+                                    <input type="range" id="iouThreshold" min="0.1" max="0.9" step="0.05" value="0.5" class="parameter-slider">
+                                    <span id="iouValue" class="parameter-value">0.5</span>
+                                </div>
+                            </div>
+                            <div class="parameter-group">
+                                <label for="maxHits" class="parameter-label">Max Detections:</label>
+                                <div class="parameter-slider-container">
+                                    <input type="range" id="maxHits" min="1" max="20" step="1" value="5" class="parameter-slider">
+                                    <span id="maxHitsValue" class="parameter-value">5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cards-section">
+                    <div class="cards-header">
+                        <h3>Detected Cards</h3>
+                        <button id="removeAllBtn" class="btn btn-danger" title="Remove all detected cards">
+                            Remove All
+                        </button>
+                    </div>
+                    <div id="cardCollection" class="card-collection"></div>
                 </div>
             </div>
 
@@ -29,17 +72,20 @@
                     <span class="status-dot" id="statusDot"></span>
                     <span id="statusText">Disconnected</span>
                 </div>
+                <div class="backend-status">
+                    <span class="backend-dot" id="backendDot"></span>
+                    <span id="backendText">Backend: Unknown</span>
+                </div>
+                <div class="processing-status">
+                    <span class="processing-dot" id="processingDot"></span>
+                    <span id="processingText">Processing: Idle</span>
+                </div>
                 <div id="messageLog" class="message-log"></div>
-            </div>
-
-            <div class="collection-section">
-                <h2>Detected Cards</h2>
-                <div id="cardCollection" class="card-grid"></div>
             </div>
         </main>
 
         <footer>
-            <p>Pokemon Card Detection &copy; 2024</p>
+            <p>Pokemon Card Detection &copy; 2025</p>
         </footer>
     </div>
 

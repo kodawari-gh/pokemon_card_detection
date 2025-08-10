@@ -1,0 +1,13 @@
+requests
+aiohttp
+python-dotenv
+sqlalchemy
+alembic
+pydantic
+pytest
+pytest-asyncio
+pytest-cov
+black
+flake8
+mypy
+types-requests

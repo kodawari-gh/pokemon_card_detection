@@ -23,8 +23,19 @@ pokemon-tcg-data/
 pokemon-tcg-data.zip
 
 cache/
-database/data/
+**/database/data/
 node_modules/
 
 playwright-report/
 test-results/
+dataset_generation/
+dataset/
+backgrounds/
+image_database/
+models/
+**/pokemon-card-segmentation/
+**/yolo11m-seg-trained.pt
+**/yolo11n.pt
+wandb/
+runs/
+ai-backend/data
